@@ -1,0 +1,76 @@
+/*оформление диалогового модуля*/
+.dialog{
+    position:fixed;
+    top:50%;
+    left:100%;
+    width:400px;
+    height:430px;
+    margin-left:-25px;
+    margin-top:-215px;
+    padding-left:15px;
+    border:#000 2px solid;
+    border-radius:10px;
+    background:#fff;
+    color:#000;
+    z-index:1500;
+    font-size:12pt;
+}
+.dialog audio{
+    width:160px;
+}
+.dialog .label{
+    position: absolute;
+    transform: rotate(270deg);
+    width:420px;
+    height:35px;
+    text-align:center;
+    overflow:hidden;
+    display:inline-block;
+    margin-left:-50%;
+    margin-top:45%;
+    cursor:pointer;
+}
+
+.dialog .header{
+    display:none;
+    text-align:center;
+    margin-top:-200px;
+}
+
+.dialog .history{
+    height: 300px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    overflow-y:scroll;
+}
+
+.dialog input, .dialog button, .dialog .history{
+    margin:2px 25px;
+    width:85%;
+    border:1px #666 solid;
+    border-radius: 5px;
+    font-size:14px;
+}
+.dialog button, .dialog .input{
+    height: 30px;
+}
+.dialog .history .question, .dialog .history .answer{
+    margin:5px;
+    width:78%;
+    border-radius: 5px;
+    padding:5px;
+}
+.dialog .history .question{
+    margin-left:40px;
+    background:#7ad9ff;
+}
+.dialog .history .answer{
+    margin-right:40px;
+    background:#dadada;
+}
+/*оформление картинок в диалоге*/
+.dialog .history .answer img,.dialog .history .answer embed{
+    cursor: pointer;
+    display: block;
+    max-width: 180px;
+}
